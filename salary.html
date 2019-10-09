@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Work out and display your salary in seconds! Using simple javascript see how fast you earn your cash compared to Bill Gates, Ronaldo and Katy Perry!">
+    <title>The Salary Calculator</title>
+    <link rel="stylesheet" type="text/css" href="salary.css">
+
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+          <div id="logowrap" onClick="animateMe()">
+            <img src="http://www.lauriestanhope.com/logo_back.svg" id="logobehind" alt="" />
+            <img src="http://www.lauriestanhope.com/logo_back.svg" id="logo" alt="" />
+            <img src="http://www.lauriestanhope.com/logo_coin.svg" id="coin" alt="" />
+            <img src="http://www.lauriestanhope.com/logo_clock.svg" id="clock" alt="" />
+            <h1>The<br />Salary<br />Stopwatch</h1>
+          </div>
+        </div>
+        <div id="banner2">
+          <div id="profile1" class="profile">
+            <div id="triangle1"></div>
+            <div class="profiletext">
+              <h1><a href="https://www.cnbc.com/2018/06/28/ronaldo-makes-over-108-million-a-year--heres-how-he-spends-it.html" target="_blank">Ronaldo</a></h1>
+              <h6>Footballer</h6>
+              <p id="procount">$<span id="sr"></span></p>
+            </div>
+            <img src="http://www.lauriestanhope.com/soccer.svg" id="ball" alt="" />
+            <img src="http://www.lauriestanhope.com/football-player.svg" id="foot" alt="" />
+          </div>
+          <div id="profile2" class="profile">
+            <div id="triangle2"></div>
+            <div class="profiletext">
+              <h1><a href="https://www.thestreet.com/personal-finance/bill-gates-net-worth-14564023" target="_blank">Bill Gates</a></h1>
+              <h6>Entrepreneur / Philanthropist</h6>
+              <p id="procount">$<span id="sbg"></span></p>
+            </div>
+            <img src="http://www.lauriestanhope.com/grandfather.svg" id="man" alt="" />
+          </div>
+          <div id="profile3" class="profile">
+            <div class="profiletext">
+              <h1><a href="https://www.rollingstone.com/music/music-news/katy-perry-highest-paid-woman-music-759433/" target="_blank">Katy Perry</a></h1>
+              <h6>Singer</h6>
+              <p id="procount">$<span id="skp"></span></p>
+            </div>
+            <img src="http://www.lauriestanhope.com/woman.svg" id="singer" alt="" />
+          </div>
+      
+        </div>
+        <div id="page1">
+          <div id="intro">
+            <p>Ever wondered how long it takes you to make a buck?<br />This simple converter will show you how much you earn in real time!</p>
+          </div>
+          <input type="number" id="salaryInput" placeholder="Yearly salary" />
+          <input type="number" id="hoursInput" placeholder="Hours worked per week" />
+          <select id="money" class="select-css">
+              <option>€</option>
+              <option>$</option>
+              <option>£</option>
+            </select>
+          <button id="gobtn" class="go" onClick="letsGo()">Go</button>
+        </div>
+        <div id="page2">
+          <h2>While at work, this is how fast you are earning your cash...</h2>
+          <h1 id="counting">
+            <span id="moneyBefore"></span><span id="countHere"></span>
+            <span id="moneyAfter"></span></h1>
+          <h3 id="hourlyrate"></h3>
+          <button id="backbtn" class="go"><a href="#" onClick="goBack()">&#8592; go back</a></button>
+        </div>
+        <footer>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br />Examples above are approximative and for entertainment purposes only.<br
+            />Money is not the solution to all of life's problems - don't stress it!<br />Have a look at <a href="http://www.lauriestanhope.com">my other work</a></div>
+        </footer>
+      </div>
+      <script src="salary.js"></script>
+</body>
+</html>
